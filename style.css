@@ -51,3 +51,106 @@ p {
 body {
   width: 100%;
 }
+
+/* Navbar  */
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 20px 50px;
+  background-color: #e3e6f3;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#navUl {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+.navLi {
+  list-style: none;
+  align-content: center;
+  padding: 0px 20px;
+  position: relative;
+}
+
+.navLi a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-decoration: none;
+  padding: 5px 0px;
+  transition: 0.2s ease;
+}
+
+li a:hover, 
+li a.active {
+  color : #088178 ;
+}
+
+li a:hover::after , 
+li a.active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+
+/* Home page */
+#mainBanner {
+  height: 90vh;
+  width: 100%;
+  background-image: url(/img/hero4.png);
+  background-size: cover;
+  display: flex;
+  padding: 0 80px;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: center;
+  background-position: top 25% right 0;
+}
+
+#mainBanner h1, h2, h4, button {
+
+}
+
+#mainBanner h1 {
+  color: #088178;  
+}
+#mainBanner button {
+  background-color: transparent;
+  background-image: url(/img/button.png);
+  background-size: cover;
+  border: 0;
+  padding: 14px 80px 14px 65px;
+  width: 250px;
+  font-size: 16px;
+  font-weight: 800;
+  color: #088178;
+}
+
+.feature {
+  background: #1a1a1a;
+  height: 400px;
+  width: 200px;
+  border: solid 2px black;
+  display: flex;
+
+}
+
+#groupOfFeatures div {
+  display: flex;
+  display: inline-block;
+  align-content: space-around;
+  justify-content: space-around;
+
+}
