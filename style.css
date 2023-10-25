@@ -138,19 +138,29 @@ li a.active::after {
   color: #088178;
 }
 
+#groupOfFeatures {
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
 .feature {
-  background: #1a1a1a;
-  height: 400px;
-  width: 200px;
-  border: solid 2px black;
-  display: flex;
+  background: #ffc4c4;
+  border: solid 1px black;
+  height: 350px;
+  width: 300px;
+  text-align: center;
+  justify-items: center;  
+}
+
+.feature img {
+  
+}
+
+.feature h6 {
+  border: solid 1px black;
 
 }
 
-#groupOfFeatures div {
-  display: flex;
-  display: inline-block;
-  align-content: space-around;
-  justify-content: space-around;
-
-}
