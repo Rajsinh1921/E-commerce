@@ -119,9 +119,6 @@ li a.active::after {
   background-position: top 25% right 0;
 }
 
-#mainBanner h1, h2, h4, button {
-
-}
 
 #mainBanner h1 {
   color: #088178;  
@@ -139,28 +136,385 @@ li a.active::after {
 }
 
 #groupOfFeatures {
-  /* display: flex; */
+  display: flex;
   align-items: center;
+  justify-content: center;
   justify-content: space-evenly;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  flex-wrap: wrap;
 }
 
 .feature {
-  background: #ffc4c4;
-  border: solid 1px black;
-  height: 350px;
-  width: 300px;
   text-align: center;
+  width: 180px;
+  padding: 25px 15px;
+  box-shadow: 10px 10px 50px rgba(70, 62, 221, 0.1);
   justify-items: center;  
+  border: 1px solid #cce7d0;
+  border-radius: 5px;
+  margin: 15px 0px;
+  transition: 0.3s ease;
+}
+
+.feature:hover {
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
 }
 
 .feature img {
-  
+  width: 100%;
+  margin-bottom: 5px;
 }
 
 .feature h6 {
-  border: solid 1px black;
-
+  padding: 10px 5px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #088178;
+  background-color: #fddde4;
+  border-radius: 5px;
+  line-height: 1;
+  display: inline-block;
 }
 
+.feature:nth-child(2) h6 {
+  background-color: #cdebbc;
+}
+.feature:nth-child(3) h6 {
+  background-color: #d1e8f2;
+}
+.feature:nth-child(4) h6 {
+  background-color: #cdd4f8;
+}
+.feature:nth-child(5) h6 {
+  background-color: #f6dbf6;
+}
+.feature:nth-child(6) h6 {
+  background-color: #fff2e5;
+}
+
+#product1 {
+  text-align: center;
+}
+
+.pro-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+} 
+
+.pro-container .pro{
+  width: 23%;
+  min-width: 250px;
+  padding: 12px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.pro-container img {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.pro-container .pro:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 50px rgba(70, 62, 221, 0.2);
+}
+
+.pro-container .discription {
+  text-align: left;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#brandGrid {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#T-styleGrid{
+  grid-column: 1 / span 2 ;
+  grid-row: 2 ;
+}
+#starsforgrid{
+  grid-column: 1 / span 2 ;
+  grid-row: 3 ;
+}
+#priceGrid{
+  grid-column: 1 / span 2  ;
+  grid-row: 4 ;
+}
+#cartGrid{
+  font-size: 20px;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  justify-self: end;
+  align-self: end;
+}
+
+.pro-container .discription span {
+  font: 8PX;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.pro-container .discription h5 {
+  font-size: 18px;
+}
+
+.pro-container .discription .starts {
+  color: orange;
+}
+
+.pro-container .pro .price {
+  color: green;
+}
+
+.pro-container .productCart #cart {
+  color: limegreen;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: rgb(212, 249, 212);
+}
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-image: url(img/banner/b2.jpg);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  justify-content: center;
+  background-position: center;
+}
+
+#banner h2, h5   {
+  color: white;
+  padding: 10px 0px;
+}
+
+#banner h5 {
+  font-size: 16px;
+}
+
+#banner h2 span {
+  color: red;
+}
+
+.normal {
+  padding: 10px 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 10px 10px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+#banner button:hover {
+  background-color: #088178;
+  color: #fff;
+} 
+
+#sm-banner {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#sm-banner .banner-box{
+  display: flex;
+  padding: 40px 60px;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: start;
+  width: 600px;
+  min-width: 580px;
+  background-image: url("img/banner/b17.jpg");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 20px 0px;
+}
+
+#product1 h5 {
+  color: #000;
+  margin-left: 0px;
+}
+
+#sm-banner .banner-box h2,h5 {
+  margin-left: 20px;
+  text-align: start;
+  align-content: center;
+  color: #fff;
+}
+
+#sm-banner .banner-box h2 {
+  font-size: 30px;
+}
+
+#sm-banner .banner-box button {
+  margin-left: 20px;
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+}
+
+#sm-banner .banner-box:hover button {
+  background-color: #088178;
+  color: #fff;
+  border: 1px solid black;
+}  
+
+#sm-banner #banner2{
+  background-image: url("img/banner/b10.jpg");
+}
+
+#Text-banner {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 40px 60px;
+}
+
+#Text-banner .banner-box {
+color: #fff;
+min-width: 30%;
+height: 40vh;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+justify-content: center;
+align-content: center;
+background-image: url("img/banner/b7.jpg");
+
+background-size: cover;
+background-position: center;
+margin: 10px 10px;
+padding: opx 10px ;
+}
+
+#Text-banner .banner-box {
+  
+}
+
+#Text-banner #Text-banner1 {
+}
+#Text-banner #Text-banner1 h2 {
+  font-size: 28px;
+  margin-left: 10px;
+}
+#Text-banner #Text-banner2 {
+background-image: url("img/banner/b4.jpg");
+} 
+#Text-banner #Text-banner2 h2{
+  margin-left: 10px;
+  font-size: 28px;
+}
+#Text-banner #Text-banner3 {
+background-image: url("img/banner/b18.jpg");
+}
+#Text-banner #Text-banner3 h2 {
+  margin-left: 10px;
+  font-size: 28px;
+}
+
+
+#newsLetter {
+  display: flex;
+  padding: 40px 60px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url("img/banner/b14.png");
+  background-position: 20% 30%;
+  background-color: #041e42;
+}
+
+#newsLetter h2 {
+  color: #fff;
+  font-size: 28px;
+  padding-left: 4%;
+}
+#newsLetter h5 {
+  color: #6d6d6d;
+}
+#newsLetter h5 span {
+  color: #ff9412;
+}
+
+.signUpinput {
+  display: flex ;
+}
+
+.signUpinput input {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 4px;
+  width: 350px;
+  height: 3.125rem;
+  padding: 0 1.25em;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.signUpinput button {
+  margin-left: 0px;
+  background-color: #088178;
+  color: #fff;
+  margin: 0px;
+  white-space: nowrap;
+}
+
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer h5 {
+  color: #000;
+}
+.footer h5 {
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+.footer .col {
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+}
+.footer .col h4 {
+margin-bottom: 20px;
+}
+
+.footer .col a {
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 15px;
+}
+.footer .Instya .dapp {
+  border: 2px solid blue;
+}
+
+.footer .firstsection img {
+  margin-bottom: 30px;
+}
+
+.footer .sociallinks i {
+  margin: 5px;
+}
