@@ -52,6 +52,8 @@ body {
   width: 100%;
 }
 
+
+
 /* Navbar  */
 #nav {
   display: flex;
@@ -649,6 +651,64 @@ margin-bottom: 20px;
 
 }
 
+/* Shop Page */
+
+#header {
+  background-image: url("/img/banner/b1.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
+#header h2,p {
+  color: #fff;
+
+}
+
+
+#paginatio a {
+  text-decoration: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  padding: 15px;
+  background-color: #088178;
+}
+
+#paginatio a:nth-child(1) {
+  padding: 15px 17px;
+  font-size: 17px;
+}
+#paginatio span {
+  position: relative;
+  top: 5px;
+  padding: 0px;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+#paginatio {
+  text-align: center;
+}
+
+
+/* Single Product */
+
+/* Blog Page */
+
+/* About Page */
+
+/* contact Page */
+
+/* Cart */
+
 /* For Mobile Devices */
 
 @media (max-width: 477px) {
@@ -721,7 +781,6 @@ margin-bottom: 20px;
   }
   .signUpinput input {
     padding: 0px;
-    padding-left: ;
     width: 250px;
     height: 2.5rem;
     padding: 0 1.25em;
@@ -730,7 +789,7 @@ margin-bottom: 20px;
     padding-left: 0;
   }
   #sm-banner .banner-box h2, h5 {
-    margin-left: 0;
+    margin-left: 10px;
   }
 }
 
