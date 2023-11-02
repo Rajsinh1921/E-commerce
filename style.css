@@ -110,6 +110,8 @@ li a.active::after {
   left: 20px;
 }
 
+
+
 #nav .mobile {
   display: none;
   text-align: center;
@@ -1231,5 +1233,20 @@ margin-bottom: 20px;
   }
 
   /* Cart-page */
+
+  #nav .mobile span.active {
+    color: #088178;
+  }
+
+  #nav .mobile span.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }
+
 }
 
